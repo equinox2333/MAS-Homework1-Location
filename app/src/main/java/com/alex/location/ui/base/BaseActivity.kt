@@ -13,7 +13,7 @@ import androidx.core.app.ActivityCompat
 import com.alex.location.service.NotificationService
 
 /**
- * 统一父类， 将权限控制下沉
+ * Unify parent class and sink access control
  */
 open class BaseActivity : AppCompatActivity() {
 
@@ -23,7 +23,7 @@ open class BaseActivity : AppCompatActivity() {
     }
 
     /**
-     * 检测app是否有位置权限
+     * Detect if the app has location permissions
      */
     fun checkHasLocationPermission(): Boolean {
         return ActivityCompat.checkSelfPermission(this,
@@ -31,7 +31,7 @@ open class BaseActivity : AppCompatActivity() {
     }
 
     /**
-     * 请求权限,打开系统权限弹框
+     * Request permissions, open system permissions popup box
      */
     fun startPermission() {
         ActivityCompat.requestPermissions(this,
@@ -46,23 +46,23 @@ open class BaseActivity : AppCompatActivity() {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
         if (requestCode == REQ_LOCATION_PERMISSION) {
             var isPermissionGranted = verifyPermissions(grantResults)
-            if (isPermissionGranted) {//已授权
+            if (isPermissionGranted) { // Authorized
                 onPermissionsSucc()
-            } else {//未授权
+            } else { // Not Authorized
                 showMissingPermissionDialog()
             }
         }
     }
 
     /**
-     * 授权成功
+     * Authorized
      */
     open fun onPermissionsSucc() {
 
     }
 
     /**
-     * 校验授权结果
+     * Verify authorization results
      */
     private fun verifyPermissions(grantResults: IntArray): Boolean {
         for (result in grantResults) {
@@ -74,7 +74,7 @@ open class BaseActivity : AppCompatActivity() {
     }
 
     /**
-     * 显示未授权提示对话框
+     * Display the Unauthorized Alert dialog box
      */
     private fun showMissingPermissionDialog() {
         val builder = AlertDialog.Builder(this)
@@ -88,7 +88,7 @@ open class BaseActivity : AppCompatActivity() {
     }
 
     /**
-     * 跳转到 App 的设置详情界面
+     * Jump to the App's settings details screen
      */
     private fun startAppSettings() {
         val intent = Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS)
@@ -97,7 +97,7 @@ open class BaseActivity : AppCompatActivity() {
     }
 
     /**
-     * 开启定位服务
+     * Start location services
      */
     fun startLocationService() {
         val intent = Intent(this@BaseActivity, NotificationService::class.java)
@@ -105,7 +105,7 @@ open class BaseActivity : AppCompatActivity() {
     }
 
     /**
-     * 停止定位服务
+     * Stop location services
      */
     fun stopLocationService() {
         val intent = Intent(this@BaseActivity, NotificationService::class.java)
@@ -113,7 +113,7 @@ open class BaseActivity : AppCompatActivity() {
     }
 
     /**
-     * 返回键
+     * Back Button
      */
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
