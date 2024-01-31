@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1080435274016",
+    "firebase_url": "https://uvindex-786f2-default-rtdb.firebaseio.com",
+    "project_id": "uvindex-786f2",
+    "storage_bucket": "uvindex-786f2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1080435274016:android:626343e144345ba0dfa745",
+        "android_client_info": {
+          "package_name": "com.alex.location.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtyHra2oUo1w5lzOxltS9-jo-N_hsq_-s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

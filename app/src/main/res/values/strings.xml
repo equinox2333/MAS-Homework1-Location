@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">SunMinder</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string-array name="p_indoors_name">
+        <item>You are UV exposed now.</item>
+        <item>You are not UV exposed now.</item>
+    </string-array>
+
+    <string-array name="p_indoors_value">
+        <item>You are UV exposed now.</item>
+        <item>You are not UV exposed now.</item>
+    </string-array>
+
+    <string-array name="p_weaterh_vale">
+        <item>sunshine</item>
+        <item>cloudy</item>
+    </string-array>
+
+    <string-array name="p_card3_color">
+        <item>#F8CFB6</item>
+        <item>#EAB494</item>
+        <item>#D49D80</item>
+        <item>#BC7657</item>
+        <item>#A85C36</item>
+        <item>#3F201D</item>
+    </string-array>
+</resources>

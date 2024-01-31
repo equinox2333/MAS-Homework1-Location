@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Location" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="update_progress_horizontal" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <!--进度条的进度颜色drawable文件-->
+        <item name="android:progressDrawable">@drawable/progress_indeterminate_horizontal</item>
+        <!--进度条的最小高度-->
+        <item name="android:minHeight">6dp</item>
+        <!--进度条的最大高度-->
+        <item name="android:maxHeight">6dp</item>
+    </style>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Basic Setting">
+        <EditTextPreference
+            android:key="p_pos"
+            android:title="Current Position" />
+        <ListPreference
+            android:entries="@array/p_indoors_name"
+            android:entryValues="@array/p_indoors_value"
+            android:key="p_indoors"
+            android:title="UV exposed or not" />
+        <ListPreference
+            android:entries="@array/p_weaterh_vale"
+            android:entryValues="@array/p_weaterh_vale"
+            android:key="p_yinqing"
+            android:title="Weather" />
+        <EditTextPreference
+            android:key="p_wendu"
+            android:title="Temperature(number)" />
+        <EditTextPreference
+            android:key="p_uv_no"
+            android:title="Uv Number" />
+        <EditTextPreference
+            android:key="p_pro_bili"
+            android:title="Progress (number,total=1,black:pink:yellow:grey)" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Card1 Setting">
+        <EditTextPreference
+            android:key="p_card1_title"
+            android:title="Title" />
+        <EditTextPreference
+            android:key="p_card1_subtitle"
+            android:title="Subtitle" />
+        <EditTextPreference
+            android:key="p_card1_pro"
+            android:title="Progress(number ,max=100)" />
+        <EditTextPreference
+            android:key="p_card1_desc"
+            android:title="Desc" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Card2 Setting">
+        <EditTextPreference
+            android:key="p_card2_title"
+            android:title="Title" />
+        <EditTextPreference
+            android:key="p_card2_subtitle"
+            android:title="Subtitle" />
+        <EditTextPreference
+            android:key="p_card2_pro"
+            android:title="Progress" />
+        <EditTextPreference
+            android:key="p_card2_desc"
+            android:title="Desc" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Card3 Setting">
+        <EditTextPreference
+            android:key="p_card3_subtitle"
+            android:title="SubTitle" />
+        <ListPreference
+            android:entries="@array/p_card3_color"
+            android:entryValues="@array/p_card3_color"
+            android:key="p_card3_color"
+            android:title="Color" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Card4 Setting">
+        <EditTextPreference
+            android:key="p_card4_title"
+            android:title="Title" />
+        <EditTextPreference
+            android:key="p_card4_subtitle"
+            android:title="Subtitle" />
+    </PreferenceCategory>
+</PreferenceScreen>
