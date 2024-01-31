@@ -48,10 +48,10 @@ class MainActivity : BaseActivity() {
             startPermission()
         }
         // Click Event
-        binding.btnTongzhiClose.setOnClickListener {
+        binding.btnNotificationClose.setOnClickListener {
             stopLocationService()
         }
-        binding.btnTongzhiOpen.setOnClickListener {
+        binding.btnNotificationOpen.setOnClickListener {
             startLocationService()
         }
         binding.btnGetSensor.setOnClickListener {
@@ -82,8 +82,8 @@ class MainActivity : BaseActivity() {
         if (i % 2 == 0) {
             binding.layoutall.setBackgroundColor(resources.getColor(android.R.color.black))
             binding.btnChangeColor.setTextColor(resources.getColor(android.R.color.black))
-            binding.btnTongzhiOpen.setTextColor(resources.getColor(android.R.color.black))
-            binding.btnTongzhiClose.setTextColor(resources.getColor(android.R.color.black))
+            binding.btnNotificationOpen.setTextColor(resources.getColor(android.R.color.black))
+            binding.btnNotificationClose.setTextColor(resources.getColor(android.R.color.black))
             binding.btnGetSensor.setTextColor(resources.getColor(android.R.color.black))
             binding.btnUserInput.setTextColor(resources.getColor(android.R.color.black))
             binding.btnNetRequest.setTextColor(resources.getColor(android.R.color.black))
@@ -93,8 +93,8 @@ class MainActivity : BaseActivity() {
         } else {
             binding.layoutall.setBackgroundColor(resources.getColor(android.R.color.white))
             binding.btnChangeColor.setTextColor(resources.getColor(android.R.color.white))
-            binding.btnTongzhiOpen.setTextColor(resources.getColor(android.R.color.white))
-            binding.btnTongzhiClose.setTextColor(resources.getColor(android.R.color.white))
+            binding.btnNotificationOpen.setTextColor(resources.getColor(android.R.color.white))
+            binding.btnNotificationClose.setTextColor(resources.getColor(android.R.color.white))
             binding.btnGetSensor.setTextColor(resources.getColor(android.R.color.white))
             binding.btnNetRequest.setTextColor(resources.getColor(android.R.color.white))
             binding.btnUserInput.setTextColor(resources.getColor(android.R.color.white))

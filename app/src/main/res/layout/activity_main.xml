@@ -39,7 +39,7 @@
         android:text="Switch Day/Night Mode" />
 
     <Button
-        android:id="@+id/btnTongzhiOpen"
+        android:id="@+id/btnNotificationOpen"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
@@ -47,7 +47,7 @@
         android:text="Open Notification" />
 
     <Button
-        android:id="@+id/btnTongzhiClose"
+        android:id="@+id/btnNotificationClose"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
